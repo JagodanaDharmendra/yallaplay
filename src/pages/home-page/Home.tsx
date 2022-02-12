@@ -2,6 +2,7 @@ import { Background, Container, Footer, Navbar } from "../../components";
 import {
   ContactUsView,
   InvestorsView,
+  OurServicesView,
   ScrollToTopButton,
   TeamView,
 } from "./components";
@@ -31,8 +32,8 @@ function Home() {
           </div>
         </Container>
         <Container>
-          <div id="our-services" className="flex p-4 h-screen">
-            our-services
+          <div id="our-services">
+            <OurServicesView />
           </div>
         </Container>
         <Container>
