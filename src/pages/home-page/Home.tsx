@@ -1,4 +1,5 @@
 import { Background, Container, Footer, Navbar } from "../../components";
+import { TeamView } from "./components";
 
 function Home() {
   return (
@@ -30,8 +31,8 @@ function Home() {
           </div>
         </Container>
         <Container>
-          <div id="founders" className="flex p-4 h-screen">
-            founders
+          <div id="founders">
+            <TeamView />
           </div>
         </Container>
         <Container>
