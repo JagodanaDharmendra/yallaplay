@@ -1,5 +1,6 @@
 import { Background, Container, Footer, Navbar } from "../../components";
 import {
+  AboutUsView,
   ContactUsView,
   InvestorsView,
   OurGamesView,
@@ -23,8 +24,8 @@ function Home() {
 
         {/* Content */}
         <Container>
-          <div id="about-us" className="flex p-4 h-screen">
-            About us
+          <div id="about-us">
+            <AboutUsView />
           </div>
         </Container>
         <Container>
