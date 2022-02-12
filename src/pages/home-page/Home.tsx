@@ -1,5 +1,10 @@
 import { Background, Container, Footer, Navbar } from "../../components";
-import { ContactUsView, ScrollToTopButton, TeamView } from "./components";
+import {
+  ContactUsView,
+  InvestorsView,
+  ScrollToTopButton,
+  TeamView,
+} from "./components";
 
 function Home() {
   return (
@@ -36,8 +41,8 @@ function Home() {
           </div>
         </Container>
         <Container>
-          <div id="investors" className="flex p-4 h-screen">
-            investors
+          <div id="investors">
+            <InvestorsView />
           </div>
         </Container>
         <Container>
