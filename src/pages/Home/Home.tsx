@@ -1,4 +1,4 @@
-import { Background, Navbar } from "../../components";
+import { Background, Footer, Navbar } from "../../components";
 
 function Home() {
   return (
@@ -28,6 +28,9 @@ function Home() {
         </div>
         <div id="contact-us" className="container flex p-4 h-screen">
           contact-us
+        </div>
+        <div className="container flex">
+          <Footer />
         </div>
       </div>
     </div>
