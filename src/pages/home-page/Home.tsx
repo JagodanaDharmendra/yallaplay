@@ -1,9 +1,9 @@
 import { Background, Container, Footer, Navbar } from "../../components";
-import { ContactUsView, TeamView } from "./components";
+import { ContactUsView, ScrollToTopButton, TeamView } from "./components";
 
 function Home() {
   return (
-    <div className="relative">
+    <div className="relative text-white">
       {/* Background */}
       <Background />
 
@@ -50,6 +50,11 @@ function Home() {
         <Container>
           <Footer />
         </Container>
+      </div>
+
+      {/* Scroll to Top Button */}
+      <div className="fixed right-5 bottom-5">
+        <ScrollToTopButton />
       </div>
     </div>
   );
