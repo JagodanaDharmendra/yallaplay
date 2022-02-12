@@ -1,37 +1,54 @@
-import { Background, Footer, Navbar } from "../../components";
+import { Background, Container, Footer, Navbar } from "../../components";
 
 function Home() {
   return (
     <div className="relative">
       {/* Background */}
       <Background />
-      <div className="absolute top-0 left-0 w-screen items-center justify-center content-center">
+
+      {/* Content */}
+      <div className="absolute top-0 left-0 w-screen">
         {/* Nav Bar */}
-        <div className="container flex p-4">
+        <Container>
           <Navbar />
-        </div>
+        </Container>
+
         {/* Content */}
-        <div id="about-us" className="container flex p-4 h-screen">
-          About us
-        </div>
-        <div id="our-games" className="container flex p-4 h-screen">
-          our-games
-        </div>
-        <div id="our-services" className="container flex p-4 h-screen">
-          our-services
-        </div>
-        <div id="founders" className="container flex p-4 h-screen">
-          founders
-        </div>
-        <div id="investors" className="container flex p-4 h-screen">
-          investors
-        </div>
-        <div id="contact-us" className="container flex p-4 h-screen">
-          contact-us
-        </div>
-        <div className="container flex">
+        <Container>
+          <div id="about-us" className="flex p-4 h-screen">
+            About us
+          </div>
+        </Container>
+        <Container>
+          <div id="our-games" className="flex p-4 h-screen">
+            our-games
+          </div>
+        </Container>
+        <Container>
+          <div id="our-services" className="flex p-4 h-screen">
+            our-services
+          </div>
+        </Container>
+        <Container>
+          <div id="founders" className="flex p-4 h-screen">
+            founders
+          </div>
+        </Container>
+        <Container>
+          <div id="investors" className="flex p-4 h-screen">
+            investors
+          </div>
+        </Container>
+        <Container>
+          <div id="contact-us" className="flex p-4 h-screen">
+            contact-us
+          </div>
+        </Container>
+
+        {/* Footer */}
+        <Container>
           <Footer />
-        </div>
+        </Container>
       </div>
     </div>
   );
