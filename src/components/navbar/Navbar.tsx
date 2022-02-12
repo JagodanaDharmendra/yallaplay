@@ -55,7 +55,7 @@ function Navbar() {
   }, [hash]);
 
   return (
-    <div className="flex items-center justify-between w-full">
+    <div className="flex items-center justify-between w-full p-4">
       <div className="max-w-xs max-h-20">
         <AppIcon />
       </div>
