@@ -1,0 +1,1 @@
+export { default as InvestorItem } from "./InvestorItem";
