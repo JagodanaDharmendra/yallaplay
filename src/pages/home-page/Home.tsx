@@ -2,6 +2,7 @@ import { Background, Container, Footer, Navbar } from "../../components";
 import {
   ContactUsView,
   InvestorsView,
+  OurGamesView,
   OurServicesView,
   ScrollToTopButton,
   TeamView,
@@ -27,8 +28,8 @@ function Home() {
           </div>
         </Container>
         <Container>
-          <div id="our-games" className="flex p-4 h-screen">
-            our-games
+          <div id="our-games">
+            <OurGamesView />
           </div>
         </Container>
         <Container>
