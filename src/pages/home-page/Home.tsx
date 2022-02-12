@@ -1,5 +1,5 @@
 import { Background, Container, Footer, Navbar } from "../../components";
-import { TeamView } from "./components";
+import { ContactUsView, TeamView } from "./components";
 
 function Home() {
   return (
@@ -41,8 +41,8 @@ function Home() {
           </div>
         </Container>
         <Container>
-          <div id="contact-us" className="flex p-4 h-screen">
-            contact-us
+          <div id="contact-us">
+            <ContactUsView />
           </div>
         </Container>
 
