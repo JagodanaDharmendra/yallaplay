@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { AppIcon, Item } from "..";
+import { AppIcon, Container, Item } from "..";
 import { MdMenu, MdClose } from "react-icons/md";
 
 const navMenus = [
@@ -75,33 +75,35 @@ function Navbar() {
 
 
   return (
-    <div className="sticky top-0 z-50"
+    <div className="sticky top-0 z-[2000] rounded-b-2xl"
       style={{
         backdropFilter: visible && !isOpen ? "blur(35px)" : ""
       }}>
 
-      <div className="relative px-8 py-8">
+      <div className=" relative px-4 py-4">
         {
           //Desktop
-          <div className="items-center justify-between w-full hidden lg:flex lg:flex-row">
-            <div className="max-w-xs max-h-20">
-              <AppIcon />
+          <Container>
+            <div className="items-center justify-between w-full hidden lg:flex lg:flex-row">
+              <div className="max-w-xs max-h-20">
+                <AppIcon />
+              </div>
+              <ul className="flex flex-row">
+                {navMenus.map((value, index) => {
+                  return (
+                    <Item
+                      key={`${value.label}`}
+                      {...value}
+                      active={activeMenu === value.href}
+                      onClick={() => {
+                        setActiveMenu(value.href);
+                      }}
+                    />
+                  );
+                })}
+              </ul>
             </div>
-            <ul className="flex flex-row">
-              {navMenus.map((value, index) => {
-                return (
-                  <Item
-                    key={`${value.label}`}
-                    {...value}
-                    active={activeMenu === value.href}
-                    onClick={() => {
-                      setActiveMenu(value.href);
-                    }}
-                  />
-                );
-              })}
-            </ul>
-          </div>
+          </Container>
         }
 
         {
@@ -124,7 +126,7 @@ function Navbar() {
               }
             </div>
             {isOpen &&
-              <div className="absolute top-0 left-0 bottom-0 right-0 h-screen w-screen flex flex-col px-8 py-8 z-50"
+              <div className="absolute top-0 left-0 bottom-0 right-0 h-screen w-screen flex flex-col p-4"
                 style={{
                   backdropFilter: "blur(95px)"
                 }}>

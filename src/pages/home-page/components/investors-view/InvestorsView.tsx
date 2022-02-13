@@ -44,9 +44,9 @@ function InvestorsView() {
     <div className="flex flex-col py-4 items-center text-center w-full justify-center">
       <div className="flex w-full flex-col">
         <h2 className="block text-primary uppercase">Investors</h2>
-        <h2 className="text-white text-5xl mt-8">Who's backing us up</h2>
+        <h2 className="text-white text-3xl sm:text-5xl mt-4 sm:mt-8">Who's backing us up</h2>
       </div>
-      <div className="w-4/5 my-32">
+      <div className="w-4/5 my-8 sm:my-32">
         <Carousel
           draggable={false}
           showDots={false}

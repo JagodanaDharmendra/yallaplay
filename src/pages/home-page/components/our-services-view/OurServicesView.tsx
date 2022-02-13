@@ -5,8 +5,8 @@ function OurServicesView() {
         <h2 className="block text-primary uppercase text-base">
           Let us build your next game
         </h2>
-        <h2 className="text-white text-4xl mt-8">Got an idea for a game?</h2>
-        <p className="text-white my-5 px-4 lg:px-12 opacity-70 text-justify max-w-2xl">
+        <h2 className="text-white text-2xl sm:text-4xl mt-4 sm:mt-8">Got an idea for a game?</h2>
+        <p className="text-white my-5 opacity-70 text-justify max-w-2xl">
           We are a also a full fledged game development studio that can take
           your game from concept to reality. We focus not only on game design
           and development, but on all aspects of for creating a successful game

@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="flex w-full justify-center items-center content-center space-x-1 py-8">
+    <div className="flex w-full justify-center items-center content-center space-x-1 py-8 text-xs sm:text-base">
       <a href="https://www.facebook.com/tarneebmasters">
         <i className="text-primary">f</i>
       </a>
