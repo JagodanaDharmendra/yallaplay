@@ -1,6 +1,6 @@
 function BannerView() {
   return (
-    <div className="relative py-32 md:pt-64 md:pb-72">
+    <div className="relative py-32 md:py-52">
       <div className="font-semibold text-white text-4xl md:text-7xl text-center">
         WE ENABLE
         <br />

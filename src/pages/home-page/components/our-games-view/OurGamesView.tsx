@@ -37,8 +37,8 @@ const statistics = [
 
 function OurGamesView() {
   return (
-    <div className="text-white px-8 py-16 space-y-16">
-      <div className="font-bold text-2xl">
+    <div className="text-white py-16 space-y-12">
+      <div className="font-bold text-4xl">
         <h1>Our Games</h1>
       </div>
       <div>
