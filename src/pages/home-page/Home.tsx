@@ -1,6 +1,7 @@
 import { Background, Container, Footer, Navbar } from "../../components";
 import {
   AboutUsView,
+  BannerView,
   ContactUsView,
   InvestorsView,
   OurGamesView,
@@ -23,6 +24,10 @@ function Home() {
         </Container>
 
         {/* Content */}
+        <Container>
+          <BannerView />
+        </Container>
+
         <Container>
           <div id="about-us">
             <AboutUsView />

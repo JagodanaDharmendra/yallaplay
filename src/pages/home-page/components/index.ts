@@ -5,3 +5,4 @@ export * from "./investors-view";
 export * from "./our-services-view";
 export * from "./our-games-view";
 export * from "./about-us-view";
+export * from "./banner-view";
