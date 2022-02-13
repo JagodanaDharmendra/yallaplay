@@ -17,9 +17,7 @@ function Home() {
       {/* Nav Bar */}
       {
         <>
-          < Container >
-            <Navbar />
-          </Container >
+          <Navbar />
         </>
       }
 
