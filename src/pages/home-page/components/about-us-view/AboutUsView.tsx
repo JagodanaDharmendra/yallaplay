@@ -13,7 +13,7 @@ const specs = [
 
 function AboutUsView() {
   return (
-    <div className="grid lg:grid-cols-1 w-full lg:w-2/5 space-y-4 text-white mx-4 py-16">
+    <div className="grid lg:grid-cols-1 w-full lg:w-2/5 space-y-4 text-white py-16 text-justify">
       <h2 className="text-primary font-medium text-lg">ABOUT US</h2>
       <h1 className="font-thin text-[40px]">Who We Are</h1>
       <p className="font-normal text-base">

@@ -31,7 +31,7 @@ function ScrollToTopButton() {
     <>
       <button
         type="button"
-        className="bg-primary font-medium rounded-lg text-sm px-4 py-5 text-center mr-2 mb-2"
+        className="bg-primary font-medium rounded-full text-sm p-4 text-center mr-2 mb-2"
         onClick={scrollToTop}
         style={{ display: visible ? "inline" : "none" }}
       >

@@ -1,6 +1,6 @@
 function ContactUsView() {
   return (
-    <div className="flex flex-col py-4 items-start w-full justify-start gap-4">
+    <div className="flex flex-col py-4 items-start w-full justify-start gap-3">
       <div className=" text-primary text-3xl">
         <h1>How to reach us</h1>
       </div>
