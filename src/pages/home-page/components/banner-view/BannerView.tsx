@@ -1,7 +1,7 @@
 function BannerView() {
   return (
     <div className="relative py-32 md:py-52">
-      <div className="font-semibold text-white text-4xl md:text-7xl text-center">
+      <div className="font-semibold text-white text-2xl md:text-5xl xl:text-7xl text-center">
         WE ENABLE
         <br />
         GREAT MOBILE GAMES
@@ -10,7 +10,7 @@ function BannerView() {
         <img
           src={require("../../../../assets/theta.png")}
           alt="theta"
-          className="h-2/3 md:h-full"
+          className="h-full"
         />
       </div>
     </div>

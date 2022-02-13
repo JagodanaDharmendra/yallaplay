@@ -13,14 +13,14 @@ interface IProps {
 
 function GameItem(props: IProps) {
   return (
-    <div className="grid grid-flow-row lg:grid-flow-col w-full py-12">
-      <div className="flex-col space-y-12">
+    <div className="grid grid-flow-row lg:grid-flow-col w-full py-6 sm:py-12">
+      <div className="flex-col space-y-6 sm:space-y-12">
         <img src={props.icon} className="w-24 h-24" alt={props.title} />
         <h1 className="font-semibold text-3xl">{props.title}</h1>
         <p className="font-normal text-base w-full lg:max-w-xl text-justify">
           {props.description}
         </p>
-        <div className="flex flex-row justify-start items-start content-start gap-4">
+        <div className="flex flex-col sm:flex-row justify-start items-start content-start gap-4">
           {props.apple && (
             <StoreButton type={IButtonType.APPLE} href={props.apple} />
           )}

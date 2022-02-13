@@ -37,7 +37,7 @@ const statistics = [
 
 function OurGamesView() {
   return (
-    <div className="text-white py-16 space-y-12">
+    <div className="text-white py-8 sm:py-16 space-y-8 sm:space-y-12">
       <div className="font-bold text-4xl">
         <h1>Our Games</h1>
       </div>
@@ -46,7 +46,7 @@ function OurGamesView() {
           return <GameItem key={value.title} {...value} />;
         })}
       </div>
-      <div className="flex flex-row justify-around items-center content-center">
+      <div className="flex flex-col sm:flex-row justify-around items-center content-center gap-8">
         {statistics.map((value) => {
           return <StatisticsItem key={value.title} {...value} />;
         })}

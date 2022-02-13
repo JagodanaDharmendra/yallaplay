@@ -1,10 +1,10 @@
 function ContactUsView() {
   return (
     <div className="flex flex-col py-4 items-start w-full justify-start gap-3">
-      <div className=" text-primary text-3xl">
+      <div className=" text-primary text-xl sm:text-3xl">
         <h1>How to reach us</h1>
       </div>
-      <div className=" text-white text-xl font-thin">
+      <div className=" text-white text-lg sm:text-xl font-thin">
         <a
           href="mailto:info@yallaplay.com"
           target="_blank"

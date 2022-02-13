@@ -12,68 +12,34 @@ import {
 
 function Home() {
   return (
-    <div className="text-white bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${require("../../assets/bg-site.jpeg")})` }}>
+    <div className="text-white bg-cover bg-no-repeat bg-center justify-center" style={{ backgroundImage: `url(${require("../../assets/bg-site.jpeg")})` }}>
+      <Navbar />
+      <Container>
+        <BannerView />
+        <div id="about-us">
+          <AboutUsView />
+        </div>
+        <div id="our-games">
+          <OurGamesView />
+        </div>
+        <div id="our-services">
+          <OurServicesView />
+        </div>
+        <div id="founders">
+          <TeamView />
+        </div>
+        <div id="investors">
+          <InvestorsView />
+        </div>
+        <div id="contact-us">
+          <ContactUsView />
+        </div>
+        <Footer />
+      </Container>
 
-      {/* Nav Bar */}
-      {
-        <>
-          <Navbar />
-        </>
-      }
-
-      {/* Content */}
-      {
-        <>
-          < Container >
-            <BannerView />
-          </Container >
-
-          <Container>
-            <div id="about-us">
-              <AboutUsView />
-            </div>
-          </Container>
-          <Container>
-            <div id="our-games">
-              <OurGamesView />
-            </div>
-          </Container>
-          <Container>
-            <div id="our-services">
-              <OurServicesView />
-            </div>
-          </Container>
-          <Container>
-            <div id="founders">
-              <TeamView />
-            </div>
-          </Container>
-          <Container>
-            <div id="investors">
-              <InvestorsView />
-            </div>
-          </Container>
-          <Container>
-            <div id="contact-us">
-              <ContactUsView />
-            </div>
-          </Container>
-
-          {/* Footer */}
-          <Container>
-            <Footer />
-          </Container>
-        </>
-      }
-
-      {/* Scroll to Top Button */}
-      {
-        <>
-          <div className="fixed right-5 bottom-5" >
-            <ScrollToTopButton />
-          </div>
-        </>
-      }
+      <div className="fixed right-0 sm:right-5 bottom-0 sm:bottom-5" >
+        <ScrollToTopButton />
+      </div>
     </div >
   );
 }
